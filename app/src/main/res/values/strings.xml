@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ShopKart</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="title_activity_accessories">Accessories</string>
+
+    <string-array name="feedback">
+        <item>Praise</item>
+        <item>Gripe</item>
+        <item>Suggestion</item>
+        <item>Bug</item>
+    </string-array>
+</resources>

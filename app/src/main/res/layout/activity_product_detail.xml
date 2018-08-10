@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bharat.otouch.www.shopeasy.productDetail.ProductDetail">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:title="Accessories"
+            android:visibility="visible"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="@android:color/white" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/prodeimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBarLayout"/>
+    <TextView
+        android:id="@+id/prodename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prodeimg"
+        android:textColor="@color/black"
+        android:textSize="23sp"/>
+    <TextView
+        android:id="@+id/prodeprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prodename"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+    <RelativeLayout
+        android:id="@+id/llay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/prodeprice">
+
+        <EditText
+            android:id="@+id/prodeQuanyity"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:hint="Quantity"/>
+
+        <Button
+            android:id="@+id/prodebuynow"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Buy Now"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:layout_marginLeft="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/prodeproducttype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llay"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/prodedes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prodeproducttype"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/prodecompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prodedes"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/prodewarenty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prodecompany"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buy"
+        android:text="Buy"
+        android:layout_below="@+id/prodewarenty"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>

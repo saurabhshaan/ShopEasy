@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFF5EE">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:title="SignIn into your account"
+                android:visibility="visible"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:titleTextColor="@android:color/white" />
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="...Create your account..."
+                android:textSize="15sp"
+                android:textAlignment="center"/>
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/mobilenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email"
+                android:hint="Phone Number"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobilenumber"
+                android:hint="Full Name"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_below="@+id/fullname"/>
+
+            <EditText
+                android:id="@+id/postalcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Postal Code"
+                android:layout_below="@+id/password"/>
+            <EditText
+                android:id="@+id/addline1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address Line 1"
+                android:layout_below="@+id/postalcode"/>
+            <EditText
+                android:id="@+id/addline2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address Line 2"
+                android:layout_below="@+id/addline1"/>
+            <EditText
+                android:id="@+id/addline3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address Line 3"
+                android:layout_below="@+id/addline2"/>
+            <RelativeLayout
+                android:id="@+id/rela"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addline3">
+                <EditText
+                    android:id="@+id/city"
+                    android:layout_width="175sp"
+                    android:layout_height="wrap_content"
+                    android:hint="City" />
+                <EditText
+                    android:id="@+id/state"
+                    android:layout_width="175sp"
+                    android:layout_height="wrap_content"
+                    android:hint="State"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rela">
+                <Button
+                    android:id="@+id/returnback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return"
+                    android:textAllCaps="false"/>
+                <Button
+                    android:id="@+id/nextforword"
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

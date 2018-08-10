@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/homepage"
+        android:title="Home"/>
+<item android:title="Fashion">
+    <menu>
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/menfashion"
+                android:title="Mens Fashion"/>
+            <item
+                android:id="@+id/womenfashion"
+                android:title="Women Fashion"/>
+            <item
+                android:id="@+id/kidsfashion"
+                android:title="Kids Fashion"/>
+            <item
+                android:id="@+id/accessories"
+                android:title="Accessories"/>
+        </group>
+    </menu>
+</item>
+    <item android:title="Electronic">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/home"
+                    android:title="Home Appliences"/>
+                <item
+                    android:id="@+id/mobile"
+                    android:title="Phones"/>
+                <item
+                    android:id="@+id/phoneaccessories"
+                    android:title="Phone Accessories"/>
+                <item
+                    android:id="@+id/computer"
+                    android:title="Computer"/>
+                <item
+                    android:id="@+id/computeraccessories"
+                    android:title="Computer Accessories"/>
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/kitchen"
+        android:title="Kitchen"/>
+    <item
+        android:id="@+id/health"
+        android:title="Health"/>
+    <item
+        android:id="@+id/homedecoration"
+        android:title="Home Decoration"/>
+    <item
+        android:id="@+id/books"
+        android:title="Books"/>
+    <item
+        android:id="@+id/bikeandcar"
+        android:title="Bike and Car"/>
+    <item
+        android:id="@+id/userlogin"
+        android:title="User Login"/>
+    <item
+        android:id="@+id/feedback"
+        android:title="Feedback"/>
+</menu>
